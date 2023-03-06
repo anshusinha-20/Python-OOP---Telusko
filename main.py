@@ -158,3 +158,38 @@
 
 # """calling the static method"""
 # print(Student.statInfo())
+
+#####
+
+## Inner class
+# """creating outer class"""
+# class Student:
+
+#     """init method"""
+#     def __init__(self, name, rollNo):
+#         self.name = name
+#         self.rollNo = rollNo
+#         self.laptop = self.Laptop()
+
+#     """show method"""
+#     def show(self):
+#         print(self.name, self.rollNo)
+#         self.laptop.showConfig()
+
+#     """creating innerclass"""
+#     class Laptop:
+
+#         """creating init method in inner class"""
+#         def __init__(self):
+#             self.brand = "Apple"
+#             self.processor = "M2"
+#             self.ram = "16gb"
+
+#         """creating showConfig method"""
+#         def showConfig(self):
+#             print(self.brand, self.processor, self.ram)
+
+
+# """creating objects"""
+# s1 = Student("Anshu", 1)
+# s1.show()
