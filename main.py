@@ -114,3 +114,46 @@
 # """printing the update value"""
 # print(c1.brand, c1.mileage, c1.wheels)
 # print(c2.brand, c2.mileage, c2.wheels)
+
+#####
+
+## Types of methods
+# """creating class"""
+# class Student:
+    
+#     """class variable"""
+#     school = "Telusko"
+
+#     """init method"""
+#     def __init__(self, m1, m2, m3):
+#         self.m1 = m1
+#         self.m2 = m2
+#         self.m3 = m3
+
+#     """method to find avg"""
+#     def avg(self): # instance method, because it works with the instance variables
+#         return round((self.m1 + self.m2 + self.m3) / 3, 2)
+    
+#     """creating class methods, which works with the class variable"""
+#     @classmethod
+#     def info(cls):
+#         return cls.school # accessing the class variable
+    
+#     """creating static method"""
+#     def statInfo():
+#         return "This is a return string from a static method"
+    
+
+# """creating objects"""
+# s1 = Student(98, 87, 99)
+# s2 = Student(88, 91, 90)
+
+# """calling the avg method"""
+# print(s1.avg())
+# print(s2.avg())
+
+# """calling the class method"""
+# print(Student.info())
+
+# """calling the static method"""
+# print(Student.statInfo())
