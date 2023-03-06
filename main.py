@@ -140,6 +140,7 @@
 #         return cls.school # accessing the class variable
     
 #     """creating static method"""
+#     @staticmethod
 #     def statInfo():
 #         return "This is a return string from a static method"
     
