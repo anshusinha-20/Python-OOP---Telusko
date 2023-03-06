@@ -278,3 +278,54 @@
 # print(c.feature1())
 # print(c.feature2())
 # print(c.feature3())
+
+##### 
+
+## Constructor in inheritance
+# """creating a class"""
+# class A:
+    
+#     """creating init method"""
+#     def __init__(self):
+#         print("In A init")
+
+#     """creating feature1 method"""
+#     def feature1(self):
+#         return ("Feature 1 is working")
+
+
+# """creating a class"""
+# class B():
+
+#     """creating init method"""
+#     def __init__(self):
+#         # super().__init__() # super method to call the init method of class A(super class)
+#         print("In B init")
+
+#     """creating feature2 method"""
+#     def feature2(self):
+#         return ("Feature 2 is working")
+    
+
+# """creating a class"""
+# class C(A, B):
+
+#     """creating init method"""
+#     def __init__(self):
+#         super().__init__() # super method calls the init method of class A(super class) by default via MRO conventions
+#         print("In C init")
+
+#     """creating feature2 method"""
+#     def feature2(self):
+#         return ("Feature 3 is working")
+
+
+# # """creating objects"""
+# # a = A()
+# # b = B()
+
+# # """calling A's init method"""
+# # b = B()
+
+# """Method resolution order"""
+# c = C()
