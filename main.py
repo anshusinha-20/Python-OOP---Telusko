@@ -193,3 +193,88 @@
 # """creating objects"""
 # s1 = Student("Anshu", 1)
 # s1.show()
+
+#####
+
+## Inheritance
+
+# """single level inheritance"""
+# class A: # parent / super class
+
+#     def feature1(self):
+#         return ("Feature 1 is working")
+
+
+# class B(A): # child / sub class
+
+#     def feature2(self):
+#         return ("Feature 2 is working")
+
+
+# a = A()
+# b = B()
+
+# """can access the methods declared within class A"""
+# print(a.feature1())
+
+# """can access the methods declared in class A as well as in class B"""
+# print(b.feature1())
+# print(b.feature2())
+
+
+# """multi-level inheritance"""
+# class A: # parent / super class
+
+#     def feature1(self):
+#         return ("Feature 1 is working")
+    
+
+# class B(A): # child / sub class
+
+#     def feature2(self):
+#         return ("Feature 2 is working")
+    
+
+# class C(B):
+
+#     def feature3(self):
+#         return ("Feature 3 is working")
+    
+
+# a = A()
+# b = B()
+# c = C()
+
+# """can access the methods declared in class A, B and C"""
+# print(c.feature1())
+# print(c.feature2())
+# print(c.feature3())
+
+
+# """multiple inheritance"""
+# class A: # parent / super class
+
+#     def feature1(self):
+#         return ("Feature 1 is working")
+    
+
+# class B():
+
+#     def feature2(self):
+#         return ("Feature 2 is working")
+    
+
+# class C(A, B):
+
+#     def feature3(self):
+#         return ("Feature 3 is working")
+    
+
+# a = A()
+# b = B()
+# c = C()
+
+# """can access the methods declared in class A, B and C"""
+# print(c.feature1())
+# print(c.feature2())
+# print(c.feature3())
