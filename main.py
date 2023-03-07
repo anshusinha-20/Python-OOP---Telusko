@@ -329,3 +329,39 @@
 
 # """Method resolution order"""
 # c = C()
+
+#####
+
+## Polymorphism - Duck typing
+# """vscode class"""
+# class Vscode:
+    
+#     """creating execute method"""
+#     def execute(self):
+#         print("Compiling\nRunning")
+
+
+# """myeditor class"""
+# class Myeditor:
+
+#     """creating execute class"""
+#     def execute(self):
+#         print("Spell check\nConvention check\nCompiling\nRunning")
+
+
+# """laptop class"""
+# class Laptop:
+
+#     """creating code class"""
+#     def code(self, ide):
+#         ide.execute()
+
+
+# """creating objects"""
+# ide1 = Vscode()
+# ide2 = Myeditor()
+# lap1 = Laptop()
+
+# lap1.code(ide1)
+# print("\n")
+# lap1.code(ide2)
